@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MULTISHOP — Browse our full catalog of products across fashion, electronics, home, sports, and more. Free shipping on orders over $50.">
+  <title>Shop All Products — MULTISHOP</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <span>Free shipping on orders over $50 &mdash; Use code <strong style="color:#fff">SHOP50</strong></span>
+      <div class="header__top-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Track Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container">
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="header__logo">MULTI<span>SHOP</span></a>
+      <form class="header__search" action="#" method="get" role="search">
+        <input type="search" placeholder="Search products, brands, categories..." aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+      <div class="header__actions">
+        <a href="#" class="header__action" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="#" class="header__action" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Wishlist</span>
+        </a>
+        <a href="#" class="header__action header__action--cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="header__cart-count">0</span>
+          <span>Cart</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="shop.html" class="navbar__link active">Shop</a>
+      <a href="shop.html" class="navbar__link" data-filter="deals">Today's Deals</a>
+      <a href="shop.html" class="navbar__link" data-filter="new">New Arrivals</a>
+      <a href="about.html" class="navbar__link">About</a>
+      <a href="contact.html" class="navbar__link">Contact</a>
+      <a href="#" class="navbar__link navbar__link--highlight">Clearance</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ==================== PAGE HERO ==================== -->
+<section class="page-hero">
+  <div class="container">
+    <h1>All Products</h1>
+    <p>Browse our complete catalog — thousands of items across every category.</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <strong>Shop</strong>
+    </nav>
+  </div>
+</section>
+
+<!-- ==================== FILTER TABS ==================== -->
+<section class="section">
+  <div class="container">
+
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="fashion">Fashion</button>
+      <button class="filter-tab" data-filter="electronics">Electronics</button>
+      <button class="filter-tab" data-filter="home">Home &amp; Living</button>
+      <button class="filter-tab" data-filter="sports">Sports</button>
+      <button class="filter-tab" data-filter="deals">Deals</button>
+      <button class="filter-tab" data-filter="new">New</button>
+    </div>
+
+    <!-- ==================== PRODUCT GRID ==================== -->
+    <div class="grid grid-4 reveal-stagger">
+
+      <!-- Product 1 -->
+      <div class="product-card reveal" data-category="electronics">
+        <div class="product-card__img">
+          <img src="assets/img/product-1.jpg" alt="Premium Wireless Headphones" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--sale">-30%</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Electronics</span>
+          <h5 class="product-card__title">Premium Wireless Headphones</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(128)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$89.99</span>
+              <span class="product-card__price--old">$129.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card reveal" data-category="electronics new">
+        <div class="product-card__img">
+          <img src="assets/img/product-2.jpg" alt="Smart Fitness Watch" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--new">New</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Wearables</span>
+          <h5 class="product-card__title">Smart Fitness Watch</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(256)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$199.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card reveal" data-category="fashion">
+        <div class="product-card__img">
+          <img src="assets/img/product-3.jpg" alt="Designer Leather Bag" loading="lazy">
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Fashion</span>
+          <h5 class="product-card__title">Designer Leather Bag</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(89)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$149.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card reveal" data-category="sports deals">
+        <div class="product-card__img">
+          <img src="assets/img/product-4.jpg" alt="Running Shoes Pro" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--hot">Hot</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Sports</span>
+          <h5 class="product-card__title">Running Shoes Pro</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(312)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$64.99</span>
+              <span class="product-card__price--old">$89.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Second Row -->
+    <div class="grid grid-4 reveal-stagger mt-2">
+
+      <!-- Product 5 -->
+      <div class="product-card reveal" data-category="home">
+        <div class="product-card__img">
+          <img src="assets/img/product-5.jpg" alt="Modern Desk Lamp" loading="lazy">
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Home &amp; Living</span>
+          <h5 class="product-card__title">Modern Desk Lamp</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(67)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$39.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card reveal" data-category="home new">
+        <div class="product-card__img">
+          <img src="assets/img/product-6.jpg" alt="Ceramic Coffee Set" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--new">New</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Home &amp; Living</span>
+          <h5 class="product-card__title">Ceramic Coffee Set</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(142)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$54.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card reveal" data-category="sports deals">
+        <div class="product-card__img">
+          <img src="assets/img/product-7.jpg" alt="Yoga Mat Premium" loading="lazy">
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Sports</span>
+          <h5 class="product-card__title">Yoga Mat Premium</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(198)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$29.99</span>
+              <span class="product-card__price--old">$44.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card reveal" data-category="electronics deals">
+        <div class="product-card__img">
+          <img src="assets/img/product-8.jpg" alt="Portable Bluetooth Speaker" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--sale">-20%</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Electronics</span>
+          <h5 class="product-card__title">Portable Bluetooth Speaker</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(84)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$39.99</span>
+              <span class="product-card__price--old">$49.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Third Row -->
+    <div class="grid grid-4 reveal-stagger mt-2">
+
+      <!-- Product 9 -->
+      <div class="product-card reveal" data-category="fashion new">
+        <div class="product-card__img">
+          <img src="assets/img/product-9.jpg" alt="Casual Denim Jacket" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--new">New</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Fashion</span>
+          <h5 class="product-card__title">Casual Denim Jacket</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(45)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$119.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card reveal" data-category="home">
+        <div class="product-card__img">
+          <img src="assets/img/cat-3.jpg" alt="Velvet Accent Pillow" loading="lazy">
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Home &amp; Living</span>
+          <h5 class="product-card__title">Velvet Accent Pillow Set</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(33)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$24.99</span>
+              <span class="product-card__price--old">$34.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card reveal" data-category="sports">
+        <div class="product-card__img">
+          <img src="assets/img/cat-4.jpg" alt="Water Bottle Insulated" loading="lazy">
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Sports</span>
+          <h5 class="product-card__title">Water Bottle Insulated</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(156)</span>
+          </div>
+          <div class="product-card__footer">
+            <span class="product-card__price">$19.99</span>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card reveal" data-category="fashion deals">
+        <div class="product-card__img">
+          <img src="assets/img/cat-1.jpg" alt="Sunglasses Aviator" loading="lazy">
+          <div class="product-card__badges">
+            <span class="badge badge--sale">-15%</span>
+          </div>
+          <div class="product-card__actions">
+            <button class="product-card__action-btn" aria-label="Add to wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="product-card__action-btn" aria-label="Quick view">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <span class="product-card__category">Fashion</span>
+          <h5 class="product-card__title">Aviator Sunglasses</h5>
+          <div class="product-card__rating">
+            <div class="product-card__stars">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="empty" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <span class="product-card__review-count">(71)</span>
+          </div>
+          <div class="product-card__footer">
+            <div>
+              <span class="product-card__price">$33.99</span>
+              <span class="product-card__price--old">$39.99</span>
+            </div>
+            <button class="product-card__add-btn" data-add aria-label="Add to cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== OFFER BANNER ==================== -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="offer-banner reveal">
+      <div class="offer-banner__bg" style="background-image:url('assets/img/offer-2.jpg')"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,41,59,0.88),rgba(220,38,38,0.55))"></div>
+      <div class="offer-banner__content">
+        <span class="label" style="color:#FEE2E2">Flash Sale — Ends Tonight</span>
+        <h2>Up to 50% Off<br>Electronics</h2>
+        <p>Limited stock available. Grab the best deals before they're gone.</p>
+        <a href="#" class="btn btn--primary btn--lg">Shop Electronics</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NEWSLETTER ==================== -->
+<section class="section--red section newsletter">
+  <div class="container">
+    <div class="newsletter__inner reveal">
+      <div class="newsletter__text">
+        <h3>Stay in the Loop</h3>
+        <p>Get exclusive deals, new arrivals, and insider picks delivered to your inbox.</p>
+      </div>
+      <form class="newsletter__form" data-form>
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn--navy">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <h3>MULTI<span>SHOP</span></h3>
+        <p>Your one-stop destination for everything you need. Thousands of products, hundreds of categories, one seamless shopping experience.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="shop.html">Shop All</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Sale Items</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns &amp; Exchanges</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Order Tracking</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span data-year></span> MULTISHOP. All rights reserved.</p>
+      <div class="footer__payments">
+        <img src="assets/img/payments.png" alt="Accepted payment methods">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
