@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercato — The Curated Fashion Marketplace</title>
+<meta name="description" content="Mercato — Discover your style at the curated fashion marketplace. Shop women's, men's, and kids' apparel from top brands. Free shipping on orders over $75.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b8482b'/%3E%3Ctext x='16' y='23' text-anchor='middle' fill='white' font-size='18' font-family='serif'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top">
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a href="mailto:hello@mercato.shop">hello@mercato.shop</a>
+      <span class="sep">|</span>
+      <span>+1 (555) 234-5678</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#">Sign In</a>
+      <span class="sep">/</span>
+      <a href="#">Register</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Merc<span>ato</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="shop.html" class="nav-link">Shop</a>
+      <a href="cart.html" class="nav-link">Cart</a>
+      <a href="checkout.html" class="nav-link">Checkout</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+        &#x1F6D2;<span class="cart-count">3</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" aria-label="Featured promotions">
+  <div class="hero-bg">
+    <img src="assets/img/img-hero-men.jpg" alt="Men's fashion collection" class="active">
+    <img src="assets/img/img-hero-women.jpg" alt="Women's fashion collection">
+    <img src="assets/img/img-hero-kids.jpg" alt="Kids' fashion collection">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div>
+      <h1>Style That Speaks<br>for Itself</h1>
+      <p>Discover curated collections from the world's most exciting brands — all in one place. Free shipping on your first order.</p>
+      <a href="shop.html" class="btn btn-light">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Strip -->
+<section class="feature-strip reveal">
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="ico">&#x2714;</span>
+        <h4>Quality Product</h4>
+        <p>Premium materials &amp; craftsmanship</p>
+      </div>
+      <div class="feature-item">
+        <span class="ico">&#x1F69A;</span>
+        <h4>Free Shipping</h4>
+        <p>On orders over $75</p>
+      </div>
+      <div class="feature-item">
+        <span class="ico">&#x21C4;</span>
+        <h4>14-Day Return</h4>
+        <p>No questions asked</p>
+      </div>
+      <div class="feature-item">
+        <span class="ico">&#x260E;</span>
+        <h4>24/7 Support</h4>
+        <p>We're here to help</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="cat-section reveal">
+  <div class="container">
+    <div class="section-title">
+      <span class="section-label">Browse</span>
+      <h2>Shop by Category</h2>
+    </div>
+    <div class="cat-grid">
+      <a href="shop.html" class="cat-card">
+        <img src="assets/img/img-cat-1.jpg" alt="Women's apparel category">
+        <div class="cat-body">
+          <h3>Women's</h3>
+          <p>128 Products</p>
+        </div>
+      </a>
+      <a href="shop.html" class="cat-card">
+        <img src="assets/img/img-cat-2.jpg" alt="Men's apparel category">
+        <div class="cat-body">
+          <h3>Men's</h3>
+          <p>96 Products</p>
+        </div>
+      </a>
+      <a href="shop.html" class="cat-card">
+        <img src="assets/img/img-cat-3.jpg" alt="Kids' fashion category">
+        <div class="cat-body">
+          <h3>Kids'</h3>
+          <p>72 Products</p>
+        </div>
+      </a>
+      <a href="shop.html" class="cat-card">
+        <img src="assets/img/img-cat-4.jpg" alt="Accessories category">
+        <div class="cat-body">
+          <h3>Accessories</h3>
+          <p>54 Products</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="prod-section reveal">
+  <div class="container">
+    <div class="section-title">
+      <span class="section-label">Featured</span>
+      <h2>Trending Now</h2>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-1.jpg" alt="Merino Wool Knit Sweater">
+          <span class="prod-badge">New</span>
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Merino Wool Knit</a>
+          <div class="prod-price">
+            <span class="curr">$148</span>
+            <span class="old">$195</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (42)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-2.jpg" alt="Tailored Linen Blazer">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Tailored Linen Blazer</a>
+          <div class="prod-price">
+            <span class="curr">$225</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (87)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-3.jpg" alt="Silk-Blend Midi Dress">
+          <span class="prod-badge sold">Sold Out</span>
+          <div class="prod-actions">
+            <a href="shop.html" class="btn btn-outline btn-sm">View Details</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Silk-Blend Midi Dress</a>
+          <div class="prod-price">
+            <span class="curr">$189</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (34)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-4.jpg" alt="Classic Denim Jacket">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Classic Denim Jacket</a>
+          <div class="prod-price">
+            <span class="curr">$132</span>
+            <span class="old">$165</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (56)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-5.jpg" alt="Cashmere Turtleneck">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Cashmere Turtleneck</a>
+          <div class="prod-price">
+            <span class="curr">$210</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (73)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-6.jpg" alt="Pleated Wide-Leg Trousers">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Pleated Wide-Leg Trousers</a>
+          <div class="prod-price">
+            <span class="curr">$118</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (29)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-7.jpg" alt="Cotton Poplin Shirt">
+          <span class="prod-badge">New</span>
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Cotton Poplin Shirt</a>
+          <div class="prod-price">
+            <span class="curr">$86</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (61)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-8.jpg" alt="Leather Crossbody Bag">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Leather Crossbody Bag</a>
+          <div class="prod-price">
+            <span class="curr">$265</span>
+            <span class="old">$320</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (94)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offer Banners -->
+<section class="offer-section reveal">
+  <div class="container">
+    <div class="offer-grid">
+      <div class="offer-card">
+        <img src="assets/img/img-offer-summer.jpg" alt="Summer sale promotion">
+        <div class="offer-overlay"></div>
+        <div class="offer-body">
+          <span class="offer-tag">Up to 40% Off</span>
+          <h3>Summer Edit</h3>
+          <p>Lightweight linen, breezy cottons, and sun-ready essentials.</p>
+          <a href="shop.html" class="btn btn-light btn-sm">Shop Summer</a>
+        </div>
+      </div>
+      <div class="offer-card">
+        <img src="assets/img/img-offer-winter.jpg" alt="Winter collection promotion">
+        <div class="offer-overlay"></div>
+        <div class="offer-body">
+          <span class="offer-tag">New Arrivals</span>
+          <h3>Winter Collection</h3>
+          <p>Cashmere, merino, and tailored layers for the season ahead.</p>
+          <a href="shop.html" class="btn btn-light btn-sm">Shop Winter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Products -->
+<section class="prod-section reveal">
+  <div class="container">
+    <div class="section-title">
+      <span class="section-label">Just In</span>
+      <h2>New Arrivals</h2>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-9.jpg" alt="Wool-Blend Overcoat">
+          <span class="prod-badge">New</span>
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Wool-Blend Overcoat</a>
+          <div class="prod-price">
+            <span class="curr">$340</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (18)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-1.jpg" alt="Merino Wool Knit Sweater">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Merino Wool Knit</a>
+          <div class="prod-price">
+            <span class="curr">$148</span>
+            <span class="old">$195</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (42)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-4.jpg" alt="Classic Denim Jacket">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Classic Denim Jacket</a>
+          <div class="prod-price">
+            <span class="curr">$132</span>
+            <span class="old">$165</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (56)
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img">
+          <img src="assets/img/img-product-6.jpg" alt="Pleated Wide-Leg Trousers">
+          <div class="prod-actions">
+            <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+          </div>
+        </div>
+        <div class="prod-body">
+          <a href="shop.html" class="prod-name">Pleated Wide-Leg Trousers</a>
+          <div class="prod-price">
+            <span class="curr">$118</span>
+          </div>
+          <div class="prod-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (29)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vendor Strip -->
+<section class="vendor-section reveal">
+  <div class="container">
+    <div class="vendor-grid">
+      <div class="vendor-item"><img src="assets/img/img-vendor-1.jpg" alt="Mosaico brand"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-2.jpg" alt="Aether label"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-3.jpg" alt="North & Pine"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-4.jpg" alt="Studio Dusk"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-5.jpg" alt="Casa Verde"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-6.jpg" alt="Loom & Thread"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-7.jpg" alt="Montage"></div>
+      <div class="vendor-item"><img src="assets/img/img-vendor-8.jpg" alt="Drift co."></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="tst-section reveal">
+  <div class="container">
+    <div class="section-title">
+      <span class="section-label">Testimonials</span>
+      <h2>What Our Shoppers Say</h2>
+    </div>
+    <div class="tst-grid">
+      <div class="tst-card">
+        <div class="tst-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"The quality exceeded my expectations. The linen blazer is beautifully tailored and the shipping was incredibly fast."</blockquote>
+        <div class="tst-person">
+          <img src="assets/img/img-client-1.jpg" alt="Sophia Chen">
+          <div>
+            <div class="tst-name">Sophia Chen</div>
+            <div class="tst-title">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-card">
+        <div class="tst-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"Mercato has become my go-to for wardrobe staples. The curation is fantastic — I always find something I love."</blockquote>
+        <div class="tst-person">
+          <img src="assets/img/img-client-2.jpg" alt="James Okafor">
+          <div>
+            <div class="tst-name">James Okafor</div>
+            <div class="tst-title">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-card">
+        <div class="tst-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <blockquote>"Great selection and easy returns. The customer service team helped me find the right size on my first order."</blockquote>
+        <div class="tst-person">
+          <img src="assets/img/img-client-3.jpg" alt="Elena Vasquez">
+          <div>
+            <div class="tst-name">Elena Vasquez</div>
+            <div class="tst-title">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-card">
+        <div class="tst-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"The kids' section is wonderful. My daughter loves her new dress, and the fabric is so soft and durable."</blockquote>
+        <div class="tst-person">
+          <img src="assets/img/img-client-4.jpg" alt="Aisha Patel">
+          <div>
+            <div class="tst-name">Aisha Patel</div>
+            <div class="tst-title">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter reveal">
+  <div class="container">
+    <h2>Join the List</h2>
+    <p>Be the first to hear about new arrivals, exclusive drops, and members-only sales.</p>
+    <form class="newsletter-form" data-form>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+      <div class="form-msg form-ok">Thanks for subscribing!</div>
+      <div class="form-msg form-err">Please enter a valid email.</div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section reveal">
+  <div class="container">
+    <h2>Ready to Refresh Your Wardrobe?</h2>
+    <p>Explore thousands of curated pieces from emerging and established designers — all with free shipping and easy returns.</p>
+    <a href="shop.html" class="btn btn-light btn-lg">Start Shopping</a>
+    <span class="cta-phone">Call us: +1 (555) 234-5678</span>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="font-size:1.4rem;color:#fff;margin-bottom:12px;display:inline-block">Merc<span style="color:var(--clr-accent)">ato</span></a>
+        <p>Mercato is a curated multi-brand marketplace connecting you with the best in contemporary fashion. We believe style should be effortless, sustainable, and accessible to everyone.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Twitter">x</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Shop</h3>
+        <ul class="footer-links">
+          <li><a href="shop.html">Women's</a></li>
+          <li><a href="shop.html">Men's</a></li>
+          <li><a href="shop.html">Kids'</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+          <li><a href="shop.html">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Care</h3>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Get in Touch</h3>
+        <ul class="footer-contact">
+          <li><span class="ico">&#x1F4CD;</span> 123 Mercer Street, New York, NY 10012</li>
+          <li><span class="ico">&#x2709;</span> hello@mercato.shop</li>
+          <li><span class="ico">&#x260E;</span> +1 (555) 234-5678</li>
+        </ul>
+        <div class="footer-payments">
+          <img src="assets/img/img-payments.png" alt="Accepted payment methods">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Mercato. All rights reserved.</span>
+      <span>Designed with care by <a href="#">Mercato Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#x2191;</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
